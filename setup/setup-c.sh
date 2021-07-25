@@ -14,5 +14,8 @@ echo "deb http://apt.llvm.org/focal/ llvm-toolchain-focal-12 main" | sudo tee /e
 sudo apt update
 sudo apt install -y clang-12 clangd-12 lld-12 lldb-12
 
+echo "Installing CMake..."
+sudo apt install cmake ninja-build
+
 echo "export CC=clang-12" >> $HOME/.zshrc
 echo "export CXX=clang++-12" >> $HOME/.zshrc
